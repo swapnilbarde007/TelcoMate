@@ -23,8 +23,8 @@ public class ProductRepoImpl implements ProductRepo {
     @Override
     public Optional<Product> getProductById(int productId) {
         if(testExcFlag){
-            Product p=new Product();
-            return Optional.of(p);
+            //Product p=new Product();
+            return Optional.empty();
         }else{
             return Optional.of(new Product(2,"Wow",39.25D,5.0D));
         }

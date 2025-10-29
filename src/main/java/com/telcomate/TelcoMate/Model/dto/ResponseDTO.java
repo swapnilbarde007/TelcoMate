@@ -17,4 +17,36 @@ public class ResponseDTO {
         this.errorMessage = errorMessage;
         this.errorTimestamp=errorTimestamp;
     }
+
+    public String getApiPath() {
+        return apiPath;
+    }
+
+    public void setApiPath(String apiPath) {
+        this.apiPath = apiPath;
+    }
+
+    public HttpStatus getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(HttpStatus errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrorMessage() {
+        return errorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        this.errorMessage = errorMessage;
+    }
+
+    public LocalDateTime getErrorTimestamp() {
+        return errorTimestamp;
+    }
+
+    public void setErrorTimestamp(LocalDateTime errorTimestamp) {
+        this.errorTimestamp = errorTimestamp;
+    }
 }
