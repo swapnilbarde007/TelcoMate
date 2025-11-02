@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Social Index</title>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <a th:href="@{/logout}" role="button">Logout</a>
+</head>
+<body>
+    <h1>Hello <span th:text="${user.email}"></span></h1>
+    <h2>User Info</h2>
+    <table>
+        <thead>
+        <td>Attribute</td>
+        <td>Value</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td th:text="${user.preferred_username}"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td th:text="${user.given_name}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

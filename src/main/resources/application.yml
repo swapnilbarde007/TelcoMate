@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: TelcoMate
+  security:
+    oauth2:
+      client:
+        registration:
+          azure-dev:
+            provider: azure
+            client-id: 071713f6-5482-4063-9ac7-6d6a62c6b148
+            client-secret: och8Q~1gEO6YSudBzE~_uYIdDPorQg0tIyU~Ncf6
+            scope:
+              - openid
+              - profile
+              - email
+            authorization-grant-type: authorization_code
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+        provider:
+          azure:
+            issuer-uri: https://login.microsoftonline.com/772b8fa7-867b-45b1-bf7b-80c0bda2dbbe/v2.0
